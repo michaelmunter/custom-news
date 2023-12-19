@@ -1,0 +1,209 @@
+[debug] [2023-12-19T12:59:36.776Z] ----------------------------------------------------------------------
+[debug] [2023-12-19T12:59:36.780Z] Command:       C:\Program Files\nodejs\node.exe C:\Users\munter\AppData\Roaming\npm\node_modules\firebase-tools\lib\bin\firebase.js emulators:start
+[debug] [2023-12-19T12:59:36.780Z] CLI Version:   13.0.2
+[debug] [2023-12-19T12:59:36.781Z] Platform:      win32
+[debug] [2023-12-19T12:59:36.781Z] Node Version:  v20.10.0
+[debug] [2023-12-19T12:59:36.781Z] Time:          Tue Dec 19 2023 13:59:36 GMT+0100 (Central European Standard Time)
+[debug] [2023-12-19T12:59:36.781Z] ----------------------------------------------------------------------
+[debug] 
+[debug] [2023-12-19T12:59:36.950Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform"]
+[debug] [2023-12-19T12:59:36.951Z] > authorizing via signed-in user (itsmunter@gmail.com)
+[debug] [2023-12-19T12:59:37.182Z] java version "21.0.1" 2023-10-17 LTS
+
+[debug] [2023-12-19T12:59:37.183Z] Java(TM) SE Runtime Environment (build 21.0.1+12-LTS-29)
+Java HotSpot(TM) 64-Bit Server VM (build 21.0.1+12-LTS-29, mixed mode, sharing)
+
+[debug] [2023-12-19T12:59:37.218Z] Parsed Java major version: 21
+[info] i  emulators: Starting emulators: auth, functions, firestore, hosting {"metadata":{"emulator":{"name":"hub"},"message":"Starting emulators: auth, functions, firestore, hosting"}}
+[debug] [2023-12-19T12:59:37.239Z] [logging] Logging Emulator only supports listening on one address (127.0.0.1). Not listening on ::1
+[debug] [2023-12-19T12:59:37.239Z] [auth] Authentication Emulator only supports listening on one address (127.0.0.1). Not listening on ::1
+[debug] [2023-12-19T12:59:37.240Z] [firestore] Firestore Emulator only supports listening on one address (127.0.0.1). Not listening on ::1
+[debug] [2023-12-19T12:59:37.240Z] [firestore.websocket] websocket server for firestore only supports listening on one address (127.0.0.1). Not listening on ::1
+[debug] [2023-12-19T12:59:37.240Z] [hosting] Hosting Emulator only supports listening on one address (127.0.0.1). Not listening on ::1
+[debug] [2023-12-19T12:59:37.240Z] assigned listening specs for emulators {"user":{"hub":[{"address":"127.0.0.1","family":"IPv4","port":4400},{"address":"::1","family":"IPv6","port":4400}],"ui":[{"address":"127.0.0.1","family":"IPv4","port":4000},{"address":"::1","family":"IPv6","port":4000}],"logging":[{"address":"127.0.0.1","family":"IPv4","port":4500}],"auth":[{"address":"127.0.0.1","family":"IPv4","port":9099}],"firestore":[{"address":"127.0.0.1","family":"IPv4","port":8080}],"firestore.websocket":[{"address":"127.0.0.1","family":"IPv4","port":9150}],"hosting":[{"address":"127.0.0.1","family":"IPv4","port":5000}]},"metadata":{"message":"assigned listening specs for emulators"}}
+[debug] [2023-12-19T12:59:37.254Z] [hub] writing locator at C:\Users\munter\AppData\Local\Temp\hub-custom-news-adc61.json
+[debug] [2023-12-19T12:59:37.269Z] >>> [apiv2][query] GET https://firebase.googleapis.com/v1beta1/projects/custom-news-adc61 [none]
+[debug] [2023-12-19T12:59:37.579Z] <<< [apiv2][status] GET https://firebase.googleapis.com/v1beta1/projects/custom-news-adc61 200
+[debug] [2023-12-19T12:59:37.580Z] <<< [apiv2][body] GET https://firebase.googleapis.com/v1beta1/projects/custom-news-adc61 {"projectId":"custom-news-adc61","projectNumber":"922049406867","displayName":"custom-news","name":"projects/custom-news-adc61","resources":{"hostingSite":"custom-news-adc61"},"state":"ACTIVE","etag":"1_c57e131e-f4d3-4969-8dd5-3703b7336ce1"}
+[debug] [2023-12-19T12:59:42.534Z] >>> [apiv2][query] GET https://firebasehosting.googleapis.com/v1beta1/projects/custom-news-adc61/sites pageToken=&pageSize=10
+[debug] [2023-12-19T12:59:43.824Z] <<< [apiv2][status] GET https://firebasehosting.googleapis.com/v1beta1/projects/custom-news-adc61/sites 200
+[debug] [2023-12-19T12:59:43.824Z] <<< [apiv2][body] GET https://firebasehosting.googleapis.com/v1beta1/projects/custom-news-adc61/sites {"sites":[{"name":"projects/custom-news-adc61/sites/custom-news-adc61","defaultUrl":"https://custom-news-adc61.web.app","appId":"1:922049406867:web:8a293154a24f43f0922a66","type":"DEFAULT_SITE"}]}
+[debug] [2023-12-19T12:59:43.826Z] >>> [apiv2][query] GET https://firebase.googleapis.com/v1beta1/projects/-/webApps/1:922049406867:web:8a293154a24f43f0922a66/config [none]
+[debug] [2023-12-19T12:59:44.573Z] <<< [apiv2][status] GET https://firebase.googleapis.com/v1beta1/projects/-/webApps/1:922049406867:web:8a293154a24f43f0922a66/config 200
+[debug] [2023-12-19T12:59:44.573Z] <<< [apiv2][body] GET https://firebase.googleapis.com/v1beta1/projects/-/webApps/1:922049406867:web:8a293154a24f43f0922a66/config {"projectId":"custom-news-adc61","appId":"1:922049406867:web:8a293154a24f43f0922a66","storageBucket":"custom-news-adc61.appspot.com","apiKey":"AIzaSyDZMShhz65RXs7f2bekp8ZAqnVAj05BFtU","authDomain":"custom-news-adc61.firebaseapp.com","messagingSenderId":"922049406867","measurementId":"G-14Q5YS60TE"}
+[info] 
+   Thank you for trying our early preview of Next.js support on Firebase Hosting.
+   During the preview, support is best-effort and breaking changes can be expected. Proceed with caution.
+
+   Documentation: https://firebase.google.com/docs/hosting/frameworks/nextjs
+   File a bug: https://github.com/firebase/firebase-tools/issues/new?template=bug_report.md
+   Submit a feature request: https://github.com/firebase/firebase-tools/issues/new?template=feature_request.md
+
+   We'd love to learn from you. Express your interest in helping us shape the future of Firebase Hosting: https://goo.gle/41enW5X
+
+[debug] [2023-12-19T13:00:11.356Z] [web frameworks] effective firebase.json:  {
+  "hosting": [
+    {
+      "source": ".",
+      "ignore": [
+        "firebase.json",
+        "**/.*",
+        "**/node_modules/**"
+      ],
+      "frameworksBackend": {
+        "region": "us-central1"
+      },
+      "site": "custom-news-adc61",
+      "rewrites": [
+        {
+          "source": "**",
+          "function": {
+            "functionId": "ssrcustomnewsadc61",
+            "region": "us-central1",
+            "pinTag": true
+          }
+        }
+      ],
+      "redirects": [],
+      "headers": [
+        {
+          "source": "**/*.[jt]s",
+          "headers": [
+            {
+              "key": "Set-Cookie",
+              "value": "__FIREBASE_DEFAULTS__=eyJlbXVsYXRvckhvc3RzIjp7ImF1dGgiOiIxMjcuMC4wLjE6OTA5OSIsImZpcmVzdG9yZSI6IjEyNy4wLjAuMTo4MDgwIn0sImNvbmZpZyI6eyJwcm9qZWN0SWQiOiJjdXN0b20tbmV3cy1hZGM2MSIsImFwcElkIjoiMTo5MjIwNDk0MDY4Njc6d2ViOjhhMjkzMTU0YTI0ZjQzZjA5MjJhNjYiLCJzdG9yYWdlQnVja2V0IjoiY3VzdG9tLW5ld3MtYWRjNjEuYXBwc3BvdC5jb20iLCJhcGlLZXkiOiJBSXphU3lEWk1TaGh6NjVSWHM3ZjJiZWtwOFpBcW5WQWowNUJGdFUiLCJhdXRoRG9tYWluIjoiY3VzdG9tLW5ld3MtYWRjNjEuZmlyZWJhc2VhcHAuY29tIiwibWVzc2FnaW5nU2VuZGVySWQiOiI5MjIwNDk0MDY4NjciLCJtZWFzdXJlbWVudElkIjoiRy0xNFE1WVM2MFRFIn0sIl9hdXRoVG9rZW5TeW5jVVJMIjoiL19fc2Vzc2lvbiJ9; SameSite=Strict; Expires=2025-11-12T23:40:11.356Z; Path=/;"
+            }
+          ]
+        }
+      ],
+      "cleanUrls": true,
+      "public": "public",
+      "webFramework": "next_ssr"
+    }
+  ],
+  "functions": [
+    {
+      "source": ".firebase\\custom-news-adc61\\functions",
+      "codebase": "firebase-frameworks-custom-news-adc61"
+    }
+  ]
+}
+[debug] [2023-12-19T13:00:11.375Z] [functions] Functions Emulator only supports listening on one address (127.0.0.1). Not listening on ::1
+[debug] [2023-12-19T13:00:11.375Z] [eventarc] Eventarc Emulator only supports listening on one address (127.0.0.1). Not listening on ::1
+[debug] [2023-12-19T13:00:11.376Z] late-assigned ports for functions and eventarc emulators {"user":{"hub":[{"address":"127.0.0.1","family":"IPv4","port":4400},{"address":"::1","family":"IPv6","port":4400}],"ui":[{"address":"127.0.0.1","family":"IPv4","port":4000},{"address":"::1","family":"IPv6","port":4000}],"logging":[{"address":"127.0.0.1","family":"IPv4","port":4500}],"auth":[{"address":"127.0.0.1","family":"IPv4","port":9099}],"firestore":[{"address":"127.0.0.1","family":"IPv4","port":8080}],"firestore.websocket":[{"address":"127.0.0.1","family":"IPv4","port":9150}],"hosting":[{"address":"127.0.0.1","family":"IPv4","port":5000}],"functions":[{"address":"127.0.0.1","family":"IPv4","port":5001}],"eventarc":[{"address":"127.0.0.1","family":"IPv4","port":9299}]},"metadata":{"message":"late-assigned ports for functions and eventarc emulators"}}
+[warn] !  functions: The following emulators are not running, calls to these services from the Functions emulator will affect production: database, pubsub, storage {"metadata":{"emulator":{"name":"functions"},"message":"The following emulators are not running, calls to these services from the Functions emulator will affect production: \u001b[1mdatabase, pubsub, storage\u001b[22m"}}
+[debug] [2023-12-19T13:00:11.386Z] defaultcredentials: writing to file C:\Users\munter\AppData\Roaming\firebase\itsmunter_gmail_com_application_default_credentials.json
+[debug] [2023-12-19T13:00:11.392Z] Setting GAC to C:\Users\munter\AppData\Roaming\firebase\itsmunter_gmail_com_application_default_credentials.json {"metadata":{"emulator":{"name":"functions"},"message":"Setting GAC to C:\\Users\\munter\\AppData\\Roaming\\firebase\\itsmunter_gmail_com_application_default_credentials.json"}}
+[debug] [2023-12-19T13:00:11.394Z] >>> [apiv2][query] GET https://firebase.googleapis.com/v1beta1/projects/custom-news-adc61/adminSdkConfig [none]
+[debug] [2023-12-19T13:00:11.714Z] <<< [apiv2][status] GET https://firebase.googleapis.com/v1beta1/projects/custom-news-adc61/adminSdkConfig 200
+[debug] [2023-12-19T13:00:11.714Z] <<< [apiv2][body] GET https://firebase.googleapis.com/v1beta1/projects/custom-news-adc61/adminSdkConfig {"projectId":"custom-news-adc61","storageBucket":"custom-news-adc61.appspot.com"}
+[debug] [2023-12-19T13:00:11.756Z] Ignoring unsupported arg: auto_download {"metadata":{"emulator":{"name":"firestore"},"message":"Ignoring unsupported arg: auto_download"}}
+[debug] [2023-12-19T13:00:11.757Z] Ignoring unsupported arg: single_project_mode_error {"metadata":{"emulator":{"name":"firestore"},"message":"Ignoring unsupported arg: single_project_mode_error"}}
+[debug] [2023-12-19T13:00:11.757Z] Starting Firestore Emulator with command {"binary":"java","args":["-Dgoogle.cloud_firestore.debug_log_level=FINE","-Duser.language=en","-jar","C:\\Users\\munter\\.cache\\firebase\\emulators\\cloud-firestore-emulator-v1.18.2.jar","--host","127.0.0.1","--port",8080,"--websocket_port",9150,"--project_id","custom-news-adc61","--rules","C:\\Users\\munter\\custom-news\\firestore.rules","--single_project_mode",true,"--functions_emulator","127.0.0.1:5001"],"optionalArgs":["port","webchannel_port","host","rules","websocket_port","functions_emulator","seed_from_export","project_id","single_project_mode"],"joinArgs":false} {"metadata":{"emulator":{"name":"firestore"},"message":"Starting Firestore Emulator with command {\"binary\":\"java\",\"args\":[\"-Dgoogle.cloud_firestore.debug_log_level=FINE\",\"-Duser.language=en\",\"-jar\",\"C:\\\\Users\\\\munter\\\\.cache\\\\firebase\\\\emulators\\\\cloud-firestore-emulator-v1.18.2.jar\",\"--host\",\"127.0.0.1\",\"--port\",8080,\"--websocket_port\",9150,\"--project_id\",\"custom-news-adc61\",\"--rules\",\"C:\\\\Users\\\\munter\\\\custom-news\\\\firestore.rules\",\"--single_project_mode\",true,\"--functions_emulator\",\"127.0.0.1:5001\"],\"optionalArgs\":[\"port\",\"webchannel_port\",\"host\",\"rules\",\"websocket_port\",\"functions_emulator\",\"seed_from_export\",\"project_id\",\"single_project_mode\"],\"joinArgs\":false}"}}
+[info] i  firestore: Firestore Emulator logging to firestore-debug.log {"metadata":{"emulator":{"name":"firestore"},"message":"Firestore Emulator logging to \u001b[1mfirestore-debug.log\u001b[22m"}}
+[info] +  firestore: Firestore Emulator UI websocket is running on 9150. {"metadata":{"emulator":{"name":"firestore"},"message":"Firestore Emulator UI websocket is running on 9150."}}
+[debug] [2023-12-19T13:00:24.467Z] >>> [apiv2][query] GET https://firebasehosting.googleapis.com/v1beta1/projects/custom-news-adc61/sites 
+[debug] [2023-12-19T13:00:25.676Z] <<< [apiv2][status] GET https://firebasehosting.googleapis.com/v1beta1/projects/custom-news-adc61/sites 200
+[debug] [2023-12-19T13:00:25.677Z] <<< [apiv2][body] GET https://firebasehosting.googleapis.com/v1beta1/projects/custom-news-adc61/sites {"sites":[{"name":"projects/custom-news-adc61/sites/custom-news-adc61","defaultUrl":"https://custom-news-adc61.web.app","appId":"1:922049406867:web:8a293154a24f43f0922a66","type":"DEFAULT_SITE"}]}
+[debug] [2023-12-19T13:00:25.678Z] >>> [apiv2][query] GET https://firebase.googleapis.com/v1beta1/projects/custom-news-adc61/webApps/1:922049406867:web:8a293154a24f43f0922a66/config [none]
+[debug] [2023-12-19T13:00:26.440Z] <<< [apiv2][status] GET https://firebase.googleapis.com/v1beta1/projects/custom-news-adc61/webApps/1:922049406867:web:8a293154a24f43f0922a66/config 200
+[debug] [2023-12-19T13:00:26.440Z] <<< [apiv2][body] GET https://firebase.googleapis.com/v1beta1/projects/custom-news-adc61/webApps/1:922049406867:web:8a293154a24f43f0922a66/config {"projectId":"custom-news-adc61","appId":"1:922049406867:web:8a293154a24f43f0922a66","storageBucket":"custom-news-adc61.appspot.com","apiKey":"AIzaSyDZMShhz65RXs7f2bekp8ZAqnVAj05BFtU","authDomain":"custom-news-adc61.firebaseapp.com","messagingSenderId":"922049406867","measurementId":"G-14Q5YS60TE"}
+[info] i  hosting[custom-news-adc61]: Serving hosting files from: public {"metadata":{"emulator":{"name":"hosting"},"message":"Serving hosting files from: \u001b[1mpublic\u001b[22m"}}
+[info] +  hosting[custom-news-adc61]: Local server: http://127.0.0.1:5000 {"metadata":{"emulator":{"name":"hosting"},"message":"Local server: \u001b[4m\u001b[1mhttp://127.0.0.1:5000\u001b[22m\u001b[24m"}}
+[debug] [2023-12-19T13:00:26.487Z] Ignoring unsupported arg: auto_download {"metadata":{"emulator":{"name":"ui"},"message":"Ignoring unsupported arg: auto_download"}}
+[debug] [2023-12-19T13:00:26.488Z] Ignoring unsupported arg: port {"metadata":{"emulator":{"name":"ui"},"message":"Ignoring unsupported arg: port"}}
+[debug] [2023-12-19T13:00:26.488Z] Starting Emulator UI with command {"binary":"node","args":["C:\\Users\\munter\\.cache\\firebase\\emulators\\ui-v1.11.7\\server\\server.js"],"optionalArgs":[],"joinArgs":false} {"metadata":{"emulator":{"name":"ui"},"message":"Starting Emulator UI with command {\"binary\":\"node\",\"args\":[\"C:\\\\Users\\\\munter\\\\.cache\\\\firebase\\\\emulators\\\\ui-v1.11.7\\\\server\\\\server.js\"],\"optionalArgs\":[],\"joinArgs\":false}"}}
+[info] i  ui: Emulator UI logging to ui-debug.log {"metadata":{"emulator":{"name":"ui"},"message":"Emulator UI logging to \u001b[1mui-debug.log\u001b[22m"}}
+[debug] [2023-12-19T13:00:26.663Z] Web / API server started at 127.0.0.1:4000
+ {"metadata":{"emulator":{"name":"ui"},"message":"Web / API server started at 127.0.0.1:4000\n"}}
+[debug] [2023-12-19T13:00:26.663Z] Web / API server started at ::1:4000
+ {"metadata":{"emulator":{"name":"ui"},"message":"Web / API server started at ::1:4000\n"}}
+[info] i  functions: Watching "C:\Users\munter\custom-news\.firebase\custom-news-adc61\functions" for Cloud Functions... {"metadata":{"emulator":{"name":"functions"},"message":"Watching \"C:\\Users\\munter\\custom-news\\.firebase\\custom-news-adc61\\functions\" for Cloud Functions..."}}
+[debug] [2023-12-19T13:00:26.768Z] Validating nodejs source
+[debug] [2023-12-19T13:00:28.497Z] > [functions] package.json contents: {
+  "main": "server.js",
+  "dependencies": {
+    "firebase-frameworks": "^0.11.0",
+    "firebase-functions": "^4.5.0",
+    "firebase-admin": "^11.11.1"
+  },
+  "engines": {
+    "node": "20"
+  }
+}
+[debug] [2023-12-19T13:00:28.497Z] Building nodejs source
+[debug] [2023-12-19T13:00:28.498Z] Failed to find version of module node: reached end of search path C:\Users\munter\custom-news\.firebase\custom-news-adc61\functions\node_modules
+[info] +  functions: Using node@20 from host. 
+[error] !!  functions: Failed to load function definition from source: FirebaseError: Failed to load environment variables from .env.local. {"metadata":{"emulator":{"name":"functions"},"message":"Failed to load function definition from source: FirebaseError: Failed to load environment variables from .env.local."}}
+[info] 
+┌─────────────────────────────────────────────────────────────┐
+│ ✔  All emulators ready! It is now safe to connect your app. │
+│ i  View Emulator UI at http://127.0.0.1:4000/               │
+└─────────────────────────────────────────────────────────────┘
+
+┌────────────────┬────────────────┬─────────────────────────────────┐
+│ Emulator       │ Host:Port      │ View in Emulator UI             │
+├────────────────┼────────────────┼─────────────────────────────────┤
+│ Authentication │ 127.0.0.1:9099 │ http://127.0.0.1:4000/auth      │
+├────────────────┼────────────────┼─────────────────────────────────┤
+│ Functions      │ 127.0.0.1:5001 │ http://127.0.0.1:4000/functions │
+├────────────────┼────────────────┼─────────────────────────────────┤
+│ Firestore      │ 127.0.0.1:8080 │ http://127.0.0.1:4000/firestore │
+├────────────────┼────────────────┼─────────────────────────────────┤
+│ Hosting        │ 127.0.0.1:5000 │ n/a                             │
+└────────────────┴────────────────┴─────────────────────────────────┘
+  Emulator Hub running at 127.0.0.1:4400
+  Other reserved ports: 4500, 9150
+
+Issues? Report them at https://github.com/firebase/firebase-tools/issues and attach the *-debug.log files.
+ 
+[debug] [2023-12-19T15:40:20.632Z] ----------------------------------------------------------------------
+[debug] [2023-12-19T15:40:20.636Z] Command:       C:\Program Files\nodejs\node.exe C:\Users\munter\AppData\Roaming\npm\node_modules\firebase-tools\lib\bin\firebase.js deploy
+[debug] [2023-12-19T15:40:20.636Z] CLI Version:   13.0.2
+[debug] [2023-12-19T15:40:20.637Z] Platform:      win32
+[debug] [2023-12-19T15:40:20.637Z] Node Version:  v20.10.0
+[debug] [2023-12-19T15:40:20.637Z] Time:          Tue Dec 19 2023 16:40:20 GMT+0100 (Central European Standard Time)
+[debug] [2023-12-19T15:40:20.637Z] ----------------------------------------------------------------------
+[debug] 
+[debug] [2023-12-19T15:40:20.731Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform"]
+[debug] [2023-12-19T15:40:20.732Z] > authorizing via signed-in user (itsmunter@gmail.com)
+[debug] [2023-12-19T15:40:20.732Z] [iam] checking project custom-news-adc61 for permissions ["datastore.indexes.create","datastore.indexes.delete","datastore.indexes.list","datastore.indexes.update","firebase.projects.get","firebasehosting.sites.update"]
+[debug] [2023-12-19T15:40:20.734Z] > refreshing access token with scopes: []
+[debug] [2023-12-19T15:40:20.736Z] >>> [apiv2][query] POST https://www.googleapis.com/oauth2/v3/token [none]
+[debug] [2023-12-19T15:40:20.736Z] >>> [apiv2][body] POST https://www.googleapis.com/oauth2/v3/token [omitted]
+[debug] [2023-12-19T15:40:20.950Z] <<< [apiv2][status] POST https://www.googleapis.com/oauth2/v3/token 200
+[debug] [2023-12-19T15:40:20.950Z] <<< [apiv2][body] POST https://www.googleapis.com/oauth2/v3/token [omitted]
+[debug] [2023-12-19T15:40:20.975Z] >>> [apiv2][query] POST https://cloudresourcemanager.googleapis.com/v1/projects/custom-news-adc61:testIamPermissions [none]
+[debug] [2023-12-19T15:40:20.975Z] >>> [apiv2][(partial)header] POST https://cloudresourcemanager.googleapis.com/v1/projects/custom-news-adc61:testIamPermissions x-goog-quota-user=projects/custom-news-adc61
+[debug] [2023-12-19T15:40:20.976Z] >>> [apiv2][body] POST https://cloudresourcemanager.googleapis.com/v1/projects/custom-news-adc61:testIamPermissions {"permissions":["datastore.indexes.create","datastore.indexes.delete","datastore.indexes.list","datastore.indexes.update","firebase.projects.get","firebasehosting.sites.update"]}
+[debug] [2023-12-19T15:40:21.279Z] <<< [apiv2][status] POST https://cloudresourcemanager.googleapis.com/v1/projects/custom-news-adc61:testIamPermissions 200
+[debug] [2023-12-19T15:40:21.280Z] <<< [apiv2][body] POST https://cloudresourcemanager.googleapis.com/v1/projects/custom-news-adc61:testIamPermissions {"permissions":["datastore.indexes.create","datastore.indexes.delete","datastore.indexes.list","datastore.indexes.update","firebase.projects.get","firebasehosting.sites.update"]}
+[debug] [2023-12-19T15:40:21.282Z] >>> [apiv2][query] GET https://firebase.googleapis.com/v1beta1/projects/custom-news-adc61 [none]
+[debug] [2023-12-19T15:40:21.743Z] <<< [apiv2][status] GET https://firebase.googleapis.com/v1beta1/projects/custom-news-adc61 200
+[debug] [2023-12-19T15:40:21.743Z] <<< [apiv2][body] GET https://firebase.googleapis.com/v1beta1/projects/custom-news-adc61 {"projectId":"custom-news-adc61","projectNumber":"922049406867","displayName":"custom-news","name":"projects/custom-news-adc61","resources":{"hostingSite":"custom-news-adc61"},"state":"ACTIVE","etag":"1_c57e131e-f4d3-4969-8dd5-3703b7336ce1"}
+[debug] [2023-12-19T15:40:26.584Z] >>> [apiv2][query] GET https://firebasehosting.googleapis.com/v1beta1/projects/custom-news-adc61/sites pageToken=&pageSize=10
+[debug] [2023-12-19T15:40:27.813Z] <<< [apiv2][status] GET https://firebasehosting.googleapis.com/v1beta1/projects/custom-news-adc61/sites 200
+[debug] [2023-12-19T15:40:27.813Z] <<< [apiv2][body] GET https://firebasehosting.googleapis.com/v1beta1/projects/custom-news-adc61/sites {"sites":[{"name":"projects/custom-news-adc61/sites/custom-news-adc61","defaultUrl":"https://custom-news-adc61.web.app","appId":"1:922049406867:web:8a293154a24f43f0922a66","type":"DEFAULT_SITE"}]}
+[debug] [2023-12-19T15:40:27.815Z] >>> [apiv2][query] GET https://firebase.googleapis.com/v1beta1/projects/-/webApps/1:922049406867:web:8a293154a24f43f0922a66/config [none]
+[debug] [2023-12-19T15:40:28.700Z] <<< [apiv2][status] GET https://firebase.googleapis.com/v1beta1/projects/-/webApps/1:922049406867:web:8a293154a24f43f0922a66/config 200
+[debug] [2023-12-19T15:40:28.700Z] <<< [apiv2][body] GET https://firebase.googleapis.com/v1beta1/projects/-/webApps/1:922049406867:web:8a293154a24f43f0922a66/config {"projectId":"custom-news-adc61","appId":"1:922049406867:web:8a293154a24f43f0922a66","storageBucket":"custom-news-adc61.appspot.com","apiKey":"AIzaSyDZMShhz65RXs7f2bekp8ZAqnVAj05BFtU","authDomain":"custom-news-adc61.firebaseapp.com","messagingSenderId":"922049406867","measurementId":"G-14Q5YS60TE"}
+[info] 
+   Thank you for trying our early preview of Next.js support on Firebase Hosting.
+   During the preview, support is best-effort and breaking changes can be expected. Proceed with caution.
+
+   Documentation: https://firebase.google.com/docs/hosting/frameworks/nextjs
+   File a bug: https://github.com/firebase/firebase-tools/issues/new?template=bug_report.md
+   Submit a feature request: https://github.com/firebase/firebase-tools/issues/new?template=feature_request.md
+
+   We'd love to learn from you. Express your interest in helping us shape the future of Firebase Hosting: https://goo.gle/41enW5X
+
+[debug] [2023-12-19T15:40:39.608Z] >>> [apiv2][query] GET https://firebasehosting.googleapis.com/v1beta1/projects/custom-news-adc61/sites/custom-news-adc61 [none]
+[debug] [2023-12-19T15:40:40.528Z] <<< [apiv2][status] GET https://firebasehosting.googleapis.com/v1beta1/projects/custom-news-adc61/sites/custom-news-adc61 200
+[debug] [2023-12-19T15:40:40.529Z] <<< [apiv2][body] GET https://firebasehosting.googleapis.com/v1beta1/projects/custom-news-adc61/sites/custom-news-adc61 {"name":"projects/custom-news-adc61/sites/custom-news-adc61","defaultUrl":"https://custom-news-adc61.web.app","appId":"1:922049406867:web:8a293154a24f43f0922a66","type":"DEFAULT_SITE"}
+[info]    ▲ Next.js 14.0.4
+
+[info]    - Environments: .env.local
+
+   Creating an optimized production build ...
+
+[debug] [2023-12-19T16:45:34.177Z] Received signal SIGHUP 1
